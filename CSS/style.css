@@ -1,5 +1,6 @@
 body{
     background-color: rgba(55, 35, 82, 0.815);
+    height: auto;
 }
 header{
     display: flex;
@@ -7,7 +8,7 @@ header{
     align-items: center;
 }
 .ImgLogo {
-    height: 30vh;
+    height: 25vh;
     background-color: rgb(177, 177, 177);
     border-radius: 100%;
     margin-bottom: 30px;
@@ -28,8 +29,9 @@ a{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    height: 15vh;
-    width: 30vh;
+    height: 10vh;
+    width: 25vh;
+    padding: 1vh;
     border: none; 
     color: white;
     text-decoration: none;
