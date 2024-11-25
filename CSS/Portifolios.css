@@ -1,4 +1,140 @@
-body{
-    background-color: darkgreen;
-    color: darkgoldenrod;
+
+
+h3 {
+    font-size: 35px;
+    text-align: center;
+}
+a{
+    background-color: #1AB6D9;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 10vh;
+    width: 25vh;
+    padding: 1vh;
+    border: none; 
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px; 
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+a:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao botão no hover */
+    transform: translateY(-2px); /* Move o botão um pouco para cima no hover */
+  }
+  
+  a:active {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra reduzida no clique */
+    transform: translateY(2px); /* Move o botão para baixo no clique, criando efeito de afundamento */
+  }
+
+.Header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.Header img {
+    height: 30vh;
+    border-radius: 20px;
+}
+
+.Sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-size: 20px;
+    text-align: justify;
+    margin: 2%;
+}
+
+
+.Projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.Bytes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 50vh;
+    margin: 2%;
+}
+
+.Bytes img {
+    height: 30vh;
+    background-color: aliceblue;
+}
+
+.Text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+
+.Competencias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+ .Items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 200px;
+    width: 170px;
+    padding: 15px;
+    margin: 5px;
+ }
+
+ .Items h4{
+    font-weight: 300;
+    text-align: center;}
+
+.Items img {
+    width: 90px;
+    height: 90px;
+}
+
+.Contatos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 30px;
+    margin: 2%;
+    height: 50vh;
+   
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    
 }
