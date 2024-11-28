@@ -1,43 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-h3 {
+@font-face {
+    font-family: 'MinhaFonte2';
+    src: url('Garet-Book.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    font-family: "Chakra Petch", sans-serif;
+}
+
+h2, h3 {
     font-size: 35px;
     text-align: center;
 }
-a{
-    background-color: #1AB6D9;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+p, h4 {
+    font-family: 'MinhaFonte2';
+}
+
+a, #ATEXT {
+    font-family: 'MinhaFonte2';
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    height: 10vh;
-    width: 25vh;
-    padding: 1vh;
-    border: none; 
     color: white;
-    text-decoration: none;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 12px; 
-    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+a {
+    background-color: #1AB6D9;
+    height: 10vh;
+    width: 20vh;
+    padding: 2vh;
+    text-decoration: none;
+    border: none;
 }
 
 a:hover {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao botão no hover */
-    transform: translateY(-2px); /* Move o botão um pouco para cima no hover */
-  }
-  
-  a:active {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra reduzida no clique */
-    transform: translateY(2px); /* Move o botão para baixo no clique, criando efeito de afundamento */
-  }
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+a:active {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
+
+#ATEXT {
+    background-color: #006379;
+    height: 6vh;
+    width: 18vh;
+    padding: 1vh;
+}
+
+#ATEXT:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    color: #006379;
+    transform: translateY(-2px);
+}
+
+#ATEXT:active {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
+
+.Bytes, .Competencias, .Contatos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
 
 .Header {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 50vh;
 }
 
@@ -47,32 +97,23 @@ a:hover {
 }
 
 .Sobre {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 50vh;
     font-size: 20px;
     text-align: justify;
-    margin: 2%;
+    margin: 5vh;
 }
 
-
 .Projetos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
     height: 60vh;
 }
 
 .Bytes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    height: 50vh;
-    margin: 2%;
+    flex-direction: row;
+    gap: 15px;
+    height: 60vh;
+    margin: 2vh;
+    align-items: flex-start;
 }
 
 .Bytes img {
@@ -81,60 +122,52 @@ a:hover {
 }
 
 .Text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: justify;
 }
 
-
 .Competencias {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 90vh;
     flex-wrap: wrap;
 }
 
-
- .Items{
+.Items {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    height: 200px;
-    width: 170px;
+    height: 150px;
+    width: 150px;
     padding: 15px;
     margin: 5px;
- }
+}
 
- .Items h4{
+.Items h4 {
     font-weight: 300;
-    text-align: center;}
+    text-align: center;
+}
 
 .Items img {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
 }
 
 .Contatos {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
     font-size: 30px;
-    margin: 2%;
-    height: 50vh;
-   
+    margin: 2vh 6vh;
+    height: 40vh;
 }
 
-.item{
+.item {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
     width: 200px;
     height: 50px;
-    
+}
+
+h5 {
+    text-align: center;
 }
