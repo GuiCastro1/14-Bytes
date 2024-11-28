@@ -105,15 +105,18 @@ a:active {
 
 .Projetos {
     
-    height: 60vh;
+    height: 80vh;
 }
 
 .Bytes {
-    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     gap: 15px;
     height: 60vh;
     margin: 2vh;
-    align-items: flex-start;
+  
 }
 
 .Bytes img {
@@ -122,7 +125,13 @@ a:active {
 }
 
 .Text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: justify;
+    gap: 10px;
+    margin: 0vh 5vh;
 }
 
 .Competencias {
@@ -155,7 +164,7 @@ a:active {
 .Contatos {
     flex-wrap: wrap;
     font-size: 30px;
-    margin: 2vh 6vh;
+    margin: 2vh ;
     height: 40vh;
 }
 
