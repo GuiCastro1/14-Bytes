@@ -1,128 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Play:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Play:wght@400;700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root{
 
-
+:root {
+    --branco: #f8f7f3;
+    --preto: #000000;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
 
-.header {
+a {
+    text-decoration: none;
+}
+h1{
+    font-family: "Chakra Petch", serif;
+    color: var(--preto);
+}
+h2 {
+    text-align: center;
+    margin: 3%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.FirstTitle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+    color: #ffffff;
+    background-color: rgba(199, 199, 199, 0.897);
+}
+
+.FirstTitle img {
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 100%;
+}
+
+nav {
+    display: none;
+}
+
+#ImgNavBar {
+    display: none;
+}
+
+#Menu {
+    display: block;
+    text-align: right;
+    cursor: pointer;
+}
+
+#Close {
+    cursor: pointer;
+}
+
+#NavBar>ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 5%;
+    gap: 10px;
+    height: 100vh;
+    margin-left: 50%;
+    color: #ffffff;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+.Apresentacao{
     background-image: url("../IMG/peri03.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
-    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
-
-
-.MiniHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 10px 20px;
-    z-index: 10;
-    background-color: rgb(85, 85, 85, 0.4);
-}
-
-.FirstTitle {
-    display: flex;
-    align-items: center;
-    gap: 45vh;
-}
-
-#ImgNavBar {
-    background-color: aliceblue;
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-
-#menu {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-#menu:hover {
-    background-color: #555;
-}
-
-
-#navbar {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    z-index: 1;
-}
-
-#navbar ul {
-    list-style: none;
-    padding: 0;
-}
-
-#navbar ul li {
-    margin: 10px 0;
-}
-
-#navbar ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-#navbar ul li a:hover {
-    color: #ffcc00;
-}
-
-/* Botão de fechamento */
-#Close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: transparent;
-    color: white;
-    font-size: 24px;
-    border: none;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-#Close:hover {
-    color: #ffcc00;
-}
-
-
-
 .slogan, .nome {
     padding: 10px;
     margin: 10%;
@@ -134,6 +110,13 @@
     background-color: rgb(0, 0, 0, 0.8);
     animation: subirDescer 4s ease-in-out infinite;
   
+}
+
+.slogan{
+
+
+} .nome {
+
 }
 
 @keyframes subirDescer {
@@ -149,67 +132,161 @@
         box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.5);
     }
 }
-
-
-
 main {
     display: flex;
     justify-content: center;
     flex-direction: column;
     height: auto;
-    margin: 5%;
+   
 }
 
-.QuemSomos{
-    /* background-image: url("../IMG/perifa02.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-     */
+.QuemSomos {
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     height: auto;
 }
-.QuemSomos p{
+
+.QuemSomos p {
     font-size: 18px;
+    margin: 2vh;
 }
-.teste {
-    position: relative;
-    width: 100%; /* Largura total disponível */
-    height: 100px; /* Altura do contêiner */
-    overflow: hidden; /* Garante que nada será cortado */
-}
-
-.teste h2 {
-    position: absolute;
-    top: 50%; /* Coloca o texto no meio da altura do contêiner */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /* Ajuste preciso para centralizar */
-    z-index: 1; /* Garante que o texto fique visível acima da imagem */
-    padding: 10px;
-    font-size: 2rem;
-    color: white;
+.titulos{
     text-align: center;
-    width: 100%; /* Ajusta a largura do título */
+    height: 78px;
+    width: 236px;
+    margin: 2vh;
 }
 
-.teste::before {
-    content: "";
+.PAI-CARROSSEL {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.carrossel {
+    position: relative;
+    height: 220px;
+    width: 180px;
+    transform-style: preserve-3d;
+    transform: perspective(600px) rotateY(0deg);
+    animation: rotate 20s linear infinite;
+}
+
+.carrossel-item {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('../IMG/1963700-abstract-tech-sci-fi-hologram-frame-template-design-background-vetor-removebg-preview.png');
-    background-size: cover; /* Faz a imagem cobrir toda a área */
-    background-position: center; /* Centraliza a imagem */
-    z-index: 0; /* Coloca a imagem abaixo do texto */
+    height: 100%;
+    width: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 60deg)) translateZ(150px);
+}
+
+.IMG-CARRO{
+    position: absolute;
+    height: 150px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes rotate {
+    100% {
+        transform: perspective(600px) rotateY(360deg);
+    }
 }
 
 
 
-.QuemSomos img{
+
+@media screen and (min-width: 750px) {
+
+    #Menu,
+    #Close {
+        display: none;
+    }
+
+    .FirstTitle {
+        display: none;
+    }
+
+    #ImgNavBar {
+        background-color: #ffffff;
+        border-radius: 100%;
+        display: block;
+        height: 80px;
+        width: 80px;
+    }
+
+    nav {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 5%;
+    }
+
+    #NavBar>ul {
+        border-radius: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        height: 5%;
+        margin: 0;
+    }
+
+ }
+
+@media screen and (min-width: 1024px) {
+
+
+
+    .PAI-CARROSSEL {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
     width: auto;
+    background-color: transparent;
 }
+
+.carrossel {
+    position: relative;
+    height: 500px;
+    width: 400px;
+    transform-style: preserve-3d;
+    transform: perspective(1100px) rotateY(0deg);
+    animation: rotate 12s linear infinite;
+}
+
+.carrossel-item {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 60deg)) translateZ(500px);
+}
+
+.IMG-CARRO {
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+    box-shadow: 0px 0px 20px var(--roror-BRANCO-B);
+}
+
+@keyframes rotate {
+    100% {
+        transform: perspective(1100px) rotateY(360deg);
+    }
+}
+}
+    

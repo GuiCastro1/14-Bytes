@@ -1,79 +1,127 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../CSS/14-Bytes.css">
     <title>14-Bytes</title>
 </head>
 
-<body>
+<body id="BodySizing">
+    <header>
 
-    <header class="header">
-        <div class="MiniHeader">
-            <div class="FirstTitle">
-                <img src="../IMG/14-Bytes.png" alt="Logo da Empresa 14-bytes." id="ImgNavBar">
-                <button id="menu">Menu</button>
-            </div>
+        <div class="FirstTitle">
 
-            <div>
-                <nav class="navbar" id="navbar">
-                    <button id="Close">X</button>
-                    <ul>
-                        <li><a href="#">Quem Somos</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Projetos</a></li>
-                        <li><a href="#">Consultorias</a></li>
-                        <li><a href="#">Clientes</a></li>
-                        <li><a href="#">Parcerias</a></li>
-                        <li><a href="#">Contatos</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+            <img src="../IMG/14-Bytes.png" alt="Logo da Empresa 14-Bytes.">
 
-        <div class="nome">
             <h1>14-Bytes</h1>
+            <span id="Menu" class="material-symbols-outlined"> menu</span>
+
+
         </div>
-        <div class="slogan">
-            <h2>Conectando mentes, construindo futuro.</h2>
-        </div>
+
+        <nav id="NavBar">
+            <ul>
+                <span id="Close" class="material-symbols-outlined"> close</span>
+                <li><img src="../IMG/14-Bytes.png" alt="" id="ImgNavBar" alt="Logo da Empresa 14-Bytes."></li>
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Consultorias</a></li>
+                <li><a href="#">Clientes</a></li>
+                <li><a href="#">Parcerias</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </nav>
     </header>
 
 
     <main>
-
-
-        <section class="QuemSomos">
-            <div class="teste">
-                <!-- <img src="../IMG/1963700-abstract-tech-sci-fi-hologram-frame-template-design-background-vetor-removebg-preview.png" alt=""> -->
-                <h2>
-                    Quem somos?
-                </h2>
+        <section class="Apresentacao">
+            <div class="nome">
+                <h2>14-Bytes</h2>
             </div>
+            <div class="slogan">
+                <h2>Conectando mentes, construindo futuro.</h2>
+            </div>
+        </section>
+        <section class="QuemSomos">
+            <img src="../IMG/QuemSomos.png" alt="" class="titulos">
             <p>A 14-Bytes e uma empresa de consultoria e realizamos atendimento para pequenas e médias empresas da
                 periferia. Nosso objetivo é a democratização e o fácil acesso ao mundo digital. Nossos serviços vão
                 desde a criação de sites e sistemas, computação em nuvem, até a infraestrutura de software e redes da
                 sua empresa, sempre levando em consideração o sucesso do cliente.</p>
 
-            <img src="../IMG/Equipe.jpg" alt="Logo da empresa 14-Bytes">
+            <!-- <img src="../IMG/Equipe.jpg" alt="Logo da empresa 14-Bytes"> -->
 
         </section>
-        <section>
-            <h2>
-                sobre
-            </h2>
-
-
-
-            <img src="../IMG/14-Bytes.png" alt="">
+        <section class="QuemSomos">
+            <img src="../IMG/Sobre.png" alt="" class="titulos">
+            <p>A 14-Bytes e uma empresa de consultoria e realizamos atendimento para pequenas e médias empresas da
+                periferia. Nosso objetivo é a democratização e o fácil acesso ao mundo digital. Nossos serviços vão
+                desde a criação de sites e sistemas, computação em nuvem, até a infraestrutura de software e redes da
+                sua empresa, sempre levando em consideração o sucesso do cliente.</p>
         </section>
-        <section>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur veritatis ducimus assumenda, sapiente
-            explicabo at magnam est natus? Dignissimos cupiditate, corrupti eaque ratione sapiente iste minima sequi!
-            Excepturi, maiores aspernatur.
+        <section class="PAI-CARROSSEL">
+
+            <div class="carrossel">
+                <div class="carrossel-item" style="--i:0">
+                    <a href=""><img src="../IMG/1.png" alt="" class="IMG-CARRO"></a>
+                </div>
+                <div class="carrossel-item" style="--i:1">
+                    <a href=""><img src="../IMG/2.png"alt="" class="IMG-CARRO"></a>
+                </div>
+
+                <div class="carrossel-item" style="--i:2">
+                    <a href=""><img src="../IMG/3.png" alt="" class="IMG-CARRO"></a>
+                </div>
+                <div class="carrossel-item" style="--i:3">
+                    <a href=""><img src="../IMG/4.png" alt="" class="IMG-CARRO"></a>
+                </div>
+
+                <div class="carrossel-item" style="--i:4">
+                    <a href=""><img src="../IMG/5.png" alt="" class="IMG-CARRO"></a>
+                </div>
+                <div class="carrossel-item" style="--i:5">
+                    <a href=""><img src="../IMG/1.png" alt="" class="IMG-CARRO"></a>
+                </div>
+
+            </div>
         </section>
+        <section class="QuemSomos">
+            <img src="../IMG/consulti.png" alt="" class="titulos">
+            <p>A 14-Bytes e uma empresa de consultoria e realizamos atendimento para pequenas e médias empresas da
+                periferia. Nosso objetivo é a democratização e o fácil acesso ao mundo digital. Nossos serviços vão
+                desde a criação de sites e sistemas, computação em nuvem, até a infraestrutura de software e redes da
+                sua empresa, sempre levando em consideração o sucesso do cliente.</p>
+        </section>
+        <section class="QuemSomos">
+            <img src="../IMG/Clientes.png" alt="" class="titulos">
+            <p>A 14-Bytes e uma empresa de consultoria e realizamos atendimento para pequenas e médias empresas da
+                periferia. Nosso objetivo é a democratização e o fácil acesso ao mundo digital. Nossos serviços vão
+                desde a criação de sites e sistemas, computação em nuvem, até a infraestrutura de software e redes da
+                sua empresa, sempre levando em consideração o sucesso do cliente.</p>
+        </section>
+        <section class="QuemSomos">
+            <img src="../IMG/PARCEIRO.png" alt="" class="titulos">
+            <p>A 14-Bytes e uma empresa de consultoria e realizamos atendimento para pequenas e médias empresas da
+                periferia. Nosso objetivo é a democratização e o fácil acesso ao mundo digital. Nossos serviços vão
+                desde a criação de sites e sistemas, computação em nuvem, até a infraestrutura de software e redes da
+                sua empresa, sempre levando em consideração o sucesso do cliente.</p>
+        </section>
+        <section class="QuemSomos">
+            <img src="../IMG/Contatos.png" alt="" class="titulos">
+            <p>A 14-Bytes e uma empresa de consultoria e realizamos atendimento para pequenas e médias empresas da
+                periferia. Nosso objetivo é a democratização e o fácil acesso ao mundo digital. Nossos serviços vão
+                desde a criação de sites e sistemas, computação em nuvem, até a infraestrutura de software e redes da
+                sua empresa, sempre levando em consideração o sucesso do cliente.</p>
+        </section>
+       
 
     </main>
     <footer>

@@ -185,3 +185,147 @@ a:hover {
 h5{
     text-align: center;
 }
+
+
+
+/* 
+.header {
+    background-image: url("../IMG/peri03.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+
+}
+
+
+.MiniHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    z-index: 10;
+    background-color: rgb(85, 85, 85, 0.4);
+}
+
+.FirstTitle {
+    display: flex;
+    align-items: center;
+    gap: 45vh;
+}
+
+#ImgNavBar {
+    background-color: aliceblue;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+#menu {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#menu:hover {
+    background-color: #555;
+}
+
+
+#navbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#navbar ul li {
+    margin: 10px 0;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+#navbar ul li a:hover {
+    color: #ffcc00;
+}
+
+Botão de fechamento
+#Close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#Close:hover {
+    color: #ffcc00;
+}
+
+
+
+.slogan, .nome {
+    padding: 10px;
+    margin: 10%;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 20px;
+    font-family: "Play", sans-serif;
+    color: #ffffff;
+    background-color: rgb(0, 0, 0, 0.8);
+    animation: subirDescer 4s ease-in-out infinite;
+  
+}
+
+@keyframes subirDescer {
+    0%,
+    50% {
+        transform: translateY(0);
+        box-shadow: none;
+    }
+
+    50% {
+        
+        transform: translateY(-1.25rem);
+        box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.5);
+    }
+}
+ */
