@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Play:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+
+
+}
+
+
+.header {
+    background-image: url("../IMG/peri03.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.MiniHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    z-index: 10;
+    background-color: rgb(85, 85, 85, 0.4);
+}
+
+.FirstTitle {
+    display: flex;
+    align-items: center;
+    gap: 45vh;
+}
+
+#ImgNavBar {
+    background-color: aliceblue;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+#menu {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#menu:hover {
+    background-color: #555;
+}
+
+
+#navbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#navbar ul li {
+    margin: 10px 0;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+#navbar ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Botão de fechamento */
+#Close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#Close:hover {
+    color: #ffcc00;
+}
+
+
+
+.slogan, .nome {
+    padding: 10px;
+    margin: 10%;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 20px;
+    font-family: "Play", sans-serif;
+    color: #ffffff;
+    background-color: rgb(0, 0, 0, 0.8);
+    animation: subirDescer 4s ease-in-out infinite;
+  
+}
+
+@keyframes subirDescer {
+    0%,
+    50% {
+        transform: translateY(0);
+        box-shadow: none;
+    }
+
+    50% {
+        
+        transform: translateY(-1.25rem);
+        box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.5);
+    }
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    margin: 5%;
+}
+
+.QuemSomos{
+    /* background-image: url("../IMG/perifa02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+     */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+}
+.QuemSomos p{
+    font-size: 18px;
+}
+.teste {
+    position: relative;
+    width: 100%; /* Largura total disponível */
+    height: 100px; /* Altura do contêiner */
+    overflow: hidden; /* Garante que nada será cortado */
+}
+
+.teste h2 {
+    position: absolute;
+    top: 50%; /* Coloca o texto no meio da altura do contêiner */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajuste preciso para centralizar */
+    z-index: 1; /* Garante que o texto fique visível acima da imagem */
+    padding: 10px;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    width: 100%; /* Ajusta a largura do título */
+}
+
+.teste::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../IMG/1963700-abstract-tech-sci-fi-hologram-frame-template-design-background-vetor-removebg-preview.png');
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    z-index: 0; /* Coloca a imagem abaixo do texto */
+}
+
+
+
+.QuemSomos img{
+    width: auto;
+}
