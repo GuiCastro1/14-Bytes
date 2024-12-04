@@ -329,3 +329,114 @@ Botão de fechamento
     }
 }
  */
+
+
+
+body {
+  background-image: url("../IMG/peri03.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; /* Centraliza a imagem */
+  filter: brightness(0.5); /* Reduz o brilho pela metade */
+  /* /* filter: blur(5px); Aplica um desfoque de 5px * */
+  /* overflow: hidden; */
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+body{
+  background-image: url("../IMG/peri03.png") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; /*Centraliza a imagem*/
+ 
+  height: 100vh;
+}
+
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.ImgLogo {
+  height: 25vh;
+  object-fit: cover;
+  background-color: rgb(177, 177, 177);
+  border-radius: 100%;
+  margin-bottom: 30px;
+}
+
+.Links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+a {
+  background-color: #1AB6D9;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 10vh;
+  width: 25vh;
+  padding: 1vh;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+a>img {
+  height: 10vh;
+  border-radius: 100%;
+}
+
+a:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  /* Adiciona sombra ao botão no hover */
+  transform: translateY(-2px);
+  /* Move o botão um pouco para cima no hover */
+}
+
+a:active {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* Sombra reduzida no clique */
+  transform: translateY(2px);
+  /* Move o botão para baixo no clique, criando efeito de afundamento */
+}
+
+h5 {
+  text-align: center;
+  color: antiquewhite;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .Links {
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    margin: 0px 300px 0px 300px; /* Ajustando margem à direita para 20px */
+    padding: 0px 300px 0px 300px;
+  }
+}
