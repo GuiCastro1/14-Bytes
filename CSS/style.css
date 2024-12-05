@@ -23,12 +23,12 @@ header {
   object-fit: cover;
   background-color: rgb(177, 177, 177);
   border-radius: 100%;
-  margin-bottom: 30px;
+  margin: 30px 0px 30px 0px;
 }
 
 .Links {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
@@ -43,8 +43,8 @@ a {
   justify-content: center;
   gap: 20px;
   height: 10vh;
-  width: 25vh;
-  padding: 1vh;
+  width: 23vh;
+  padding: 2vh;
   border: none;
   color: white;
   text-decoration: none;
@@ -94,6 +94,6 @@ h5 {
     align-items: center;
     margin: 0px 300px 0px 300px;
     /* Ajustando margem à direita para 20px */
-    padding: 0px 300px 0px 300px;
+    /* padding: 0px 300px 0px 300px; */
   }
 }
