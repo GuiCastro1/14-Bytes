@@ -14,22 +14,10 @@
 html,
 body {
     scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
 }
 
 a {
     text-decoration: none;
-}
-h1{
-    font-family: "Chakra Petch", serif;
-    color: var(--preto);
-}
-h2 {
-    text-align: center;
-    margin: 3%;
 }
 
 header {
@@ -49,7 +37,7 @@ header {
     align-items: center;
     padding: 2%;
     color: #ffffff;
-    background-color: rgba(199, 199, 199, 0.897);
+    background-color: rgba(199, 199, 199);
 }
 
 .FirstTitle img {
@@ -88,125 +76,12 @@ nav {
     color: #ffffff;
     background-color: rgb(0, 0, 0, 0.4);
 }
-.Apresentacao{
-    background-image: url("../IMG/peri03.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.slogan, .nome {
-    padding: 10px;
-    margin: 10%;
-    text-align: center;
-    border-radius: 25px;
-    font-size: 20px;
-    font-family: "Play", sans-serif;
-    color: #ffffff;
-    background-color: rgb(0, 0, 0, 0.8);
-    animation: subirDescer 4s ease-in-out infinite;
-  
-}
-
-.slogan{
-
-
-} .nome {
-
-}
-
-@keyframes subirDescer {
-    0%,
-    50% {
-        transform: translateY(0);
-        box-shadow: none;
-    }
-
-    50% {
-        
-        transform: translateY(-1.25rem);
-        box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.5);
-    }
-}
-main {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: auto;
-   
-}
-
-.QuemSomos {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: auto;
-}
-
-.QuemSomos p {
-    font-size: 18px;
-    margin: 2vh;
-}
-.titulos{
-    text-align: center;
-    height: 78px;
-    width: 236px;
-    margin: 2vh;
-}
-
-.PAI-CARROSSEL {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 10px;
-    background-color: transparent;
-}
-
-.carrossel {
-    position: relative;
-    height: 220px;
-    width: 180px;
-    transform-style: preserve-3d;
-    transform: perspective(600px) rotateY(0deg);
-    animation: rotate 20s linear infinite;
-}
-
-.carrossel-item {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    transform-origin: center;
-    transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 60deg)) translateZ(150px);
-}
-
-.IMG-CARRO{
-    position: absolute;
-    height: 150px;
-    width: 120px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-@keyframes rotate {
-    100% {
-        transform: perspective(600px) rotateY(360deg);
-    }
-}
-
-
 
 
 @media screen and (min-width: 750px) {
-
+.OcultarPARAcomputador{
+    display: none;
+}
     #Menu,
     #Close {
         display: none;
@@ -246,47 +121,5 @@ main {
 
 @media screen and (min-width: 1024px) {
 
-
-
-    .PAI-CARROSSEL {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: auto;
-    background-color: transparent;
-}
-
-.carrossel {
-    position: relative;
-    height: 500px;
-    width: 400px;
-    transform-style: preserve-3d;
-    transform: perspective(1100px) rotateY(0deg);
-    animation: rotate 12s linear infinite;
-}
-
-.carrossel-item {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    transform-origin: center;
-    transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 60deg)) translateZ(500px);
-}
-
-.IMG-CARRO {
-    position: absolute;
-    height: 300px;
-    width: 200px;
-    object-fit: cover;
-    box-shadow: 0px 0px 20px var(--roror-BRANCO-B);
-}
-
-@keyframes rotate {
-    100% {
-        transform: perspective(1100px) rotateY(360deg);
-    }
-}
 }
     
