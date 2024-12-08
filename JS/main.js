@@ -54,3 +54,4 @@ document.getElementById("Close").addEventListener("click", function () {
         document.getElementById("NavBar").style.display = "none"
     }
 });
+

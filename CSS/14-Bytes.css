@@ -20,14 +20,6 @@ body {
 a {
     text-decoration: none;
 }
-svg{
-    rotate: 180deg;
-    display: block;
-}
-
-.NoRotate{
-    rotate: 0deg;
-}
 
 header {
     position: fixed;
@@ -135,16 +127,8 @@ nav {
     }
 }
 
-.curiosidades {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-}
 
 .container {
-    position: relative;
     text-align: center;
 }
 
@@ -153,37 +137,139 @@ nav {
     padding: 2vh;
     text-align: justify;
     color: rgb(0, 0, 0);
-    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); */
     z-index: 1;
-    /* Garante que o texto fique acima do avião */
     border: solid 2px black;
     border-radius: 10px;
 }
 
-.aviao {
+
+body{
+    background-color: #f8f9fa; /
+}
+h2 {
+    font-weight: 700;
+    color: #343a40;
+}
+
+#feedbackCarousel {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+.carousel-item {
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.carousel-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #007bff; /* Borda com cor de destaque */
+}
+
+.carousel-item h5 {
+    font-weight: bold;
+    margin: 15px 0 5px;
+    color: #007bff; /* Cor de destaque */
+}
+
+.carousel-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #6c757d;
+    max-width: 600px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Ícones brancos */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #007bff; /* Indicadores azuis */
+}
+
+.carousel-indicators .active {
+    background-color: #0056b3; /* Indicador ativo mais escuro */
+}
+.Footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+    padding: 2vh;
+    overflow: hidden;
+}
+
+.Footer::before {
+    content: "";
     position: absolute;
-    width: 50px;
-    height: 50px;
-    background-image: url('../IMG/84974.png');
-    background-size: contain;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../IMG/peri02.png");
+    /* Ajuste o caminho se necessário */
     background-repeat: no-repeat;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: girarEmCirculo 20s linear infinite;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: brightness(0.5);
+    /* Adiciona um leve efeito para realçar o conteúdo */
 }
 
-/* Animação de rotação em torno do h1 */
-@keyframes girarEmCirculo {
-    0% {
-        transform: translate(-50%, -50%) rotate(0deg) translateX(200px);
-    }
-
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg) translateX(200px);
-    }
+.imgFooter {
+    background-color: #ffffff;
+    height: 25vh;
+    border-radius: 100%;
 }
 
+.logoFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+ 
+.RedeSocial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.LinksAncoras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 25px;
+    gap: 5px;
+   
+}
+.LinksAncoras a{
+    background-color: #000000;
+    color: antiquewhite;
+    border-radius: 10px;
+    padding: 5px;
+}
+h5 {
+    text-align: center;
+    padding: 1vh;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    color: aliceblue;
+}
 
 @media screen and (min-width: 750px) {
     .OcultarPARAcomputador {
@@ -223,6 +309,11 @@ nav {
         width: 100%;
         height: 5%;
         margin: 0;
+    }
+
+    .LinksAncoras {
+        flex-direction: row;
+        gap: 200px;
     }
 
 }

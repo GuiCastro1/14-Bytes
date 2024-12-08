@@ -440,3 +440,57 @@ h5 {
     padding: 0px 300px 0px 300px;
   }
 }
+
+/* .Footer::after{
+    background-image: url("../IMG/peri03.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+}
+.Footer {
+    background-color: chartreuse;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60vh;
+    padding: 2vh;
+    
+}
+
+
+.imgFooter {
+    height: 30vh;
+    border-radius: 100%;
+}
+.logoFooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.RedeSocial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.LinksAncoras{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 25px;
+    gap: 5px;
+}
+h5{
+    text-align: center;
+    padding: 2vh;
+    background-color: darkgreen;
+    margin: 0;
+    color: aliceblue;
+} */
