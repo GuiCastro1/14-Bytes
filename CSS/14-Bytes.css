@@ -78,17 +78,7 @@ nav {
     background-color: rgb(0, 0, 0, 0.4);
 }
 
-.Inicio {
-    margin: 13vh 0vh 0vh 0vh;
-    background-image: url("../IMG/2.png");
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-}
-
-.SOBRE,
-.QUEMSOMOS {
+.SOBRE {
     height: 50vh;
     display: flex;
     justify-content: center;
@@ -104,9 +94,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    height: 80vh;
+    height: auto;
     padding: 2vh;
-    /* overflow: hidden; */
 }
 
 .SOBRE::before {
@@ -119,35 +108,17 @@ nav {
     background-image: url("../IMG/14-Bytes.png");
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center; */
+    background-position: center;
     z-index: -1;
     opacity: 0.3;
 }
 
-
 .SOBRE p {
-font-weight: bolder;
+    font-weight: bolder;
 }
 
-.QUEMSOMOS {
-    flex-direction: row-reverse;
-    padding: 14px;
-    border: 3px solid;
-
-}
-
-.IMGSOBREQUEMSOMOS {
-    height: 30vh;
-    border-radius: 10px;
-    animation: subirDescer 5s ease-in-out 2;
-    /* Executa apenas uma vez */
-    animation-delay: 5s;
-    /* Começa após 10 segundos */
-
-    /* float:right;
-   
-    clear: right; */
-}
+/* animation: subirDescer 5s ease-in-out 2;
+    animation-delay: 5s; */
 
 @keyframes subirDescer {
 
@@ -159,9 +130,7 @@ font-weight: bolder;
 
     50% {
         transform: translateY(-1.25rem) scale(1.05);
-        /* Escala sutil */
         box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
-        /* Box-shadow sólido */
     }
 }
 
@@ -180,18 +149,154 @@ font-weight: bolder;
     border-radius: 10px;
 }
 
-
-/* body{
-    background-color: #f8f9fa; /
+.CentralizaCarrosel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
-h2 {
-    font-weight: 700;
-    color: #343a40;
-} */
+
+#ImagemPrincipal {
+    width: 100%;
+    height: 50vh;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.ttt img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.ttt img:hover {
+    width: 110px;
+}
+.Parceiros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.containerSlide {
+    width: 75vw;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.PaginaSlide {
+    display: inline-block;
+    animation: teste 10s linear infinite;
+}
+
+@keyframes teste {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+.centraliza-carrosel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+#imagem-principal {
+    width: 100%;
+    height: 50vh;
+    border-radius: 15px;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.imagens-menores img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.imagens-menores img:hover {
+    width: 110px;
+}
+
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.overlay.active {
+    display: flex;
+}
+
+.descricao-container {
+    text-align: center;
+}
+
+#descricao-texto {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.link {
+    text-decoration: none;
+    color: #00f;
+    background: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.link:hover {
+    background: #ddd;
+    color: #000;
+}
+
+.fechar-overlay {
+    background-color: red;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.fechar-overlay:hover {
+    background-color: darkred;
+}
+
+
+
 .galeria {
     background-color: #6c757d;
     columns: 150px;
-    /* margin: 0.5em; */
     padding: 1em;
     column-gap: 0.5em;
 }
@@ -200,6 +305,54 @@ h2 {
     width: 100%;
     margin-bottom: 0.5em;
     border-radius: 20px;
+}
+
+.tes {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.tes h3 {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #0056b3;
+}
+
+.tes .material-icons {
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: #0056b3;
+    vertical-align: middle;
+}
+
+.tes p {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.tes hr {
+    border: none;
+    height: 2px;
+    /* Um pouco mais espesso */
+    background: linear-gradient(to right, transparent, #888, transparent);
+    /* Cor mais forte */
+    margin: 15px 0;
+}
+
+.tes p .material-icons {
+    margin-right: 8px;
+    color: #333;
 }
 
 #feedbackCarousel {
@@ -219,14 +372,12 @@ h2 {
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid #007bff;
-    /* Borda com cor de destaque */
 }
 
 .carousel-item h5 {
     font-weight: bold;
     margin: 15px 0 5px;
     color: #007bff;
-    /* Cor de destaque */
 }
 
 .carousel-item p {
@@ -239,7 +390,6 @@ h2 {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     filter: invert(1);
-    /* Ícones brancos */
 }
 
 .carousel-control-prev,
@@ -249,12 +399,11 @@ h2 {
 
 .carousel-indicators [data-bs-target] {
     background-color: #007bff;
-    /* Indicadores azuis */
+
 }
 
 .carousel-indicators .active {
     background-color: #0056b3;
-    /* Indicador ativo mais escuro */
 }
 
 .Footer {
@@ -275,52 +424,14 @@ h2 {
     width: 100%;
     height: 100%;
     background-image: url("../IMG/peri02.png");
-    /* Ajuste o caminho se necessário */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     z-index: -1;
     filter: brightness(0.5);
-    /* Adiciona um leve efeito para realçar o conteúdo */
-}
-
-.imgFooter {
-    background-color: #ffffff;
-    height: 15vh;
-    border-radius: 20px;
-}
-
-.logoFooter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.RedeSocial {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.LinksAncoras {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 25px;
-    gap: 5px;
 
 }
 
-.LinksAncoras a {
-    background-color: #000000;
-    color: antiquewhite;
-    border-radius: 10px;
-    padding: 5px;
-}
 
 h5 {
     text-align: center;

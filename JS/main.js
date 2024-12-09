@@ -55,3 +55,31 @@ document.getElementById("Close").addEventListener("click", function () {
     }
 });
 
+let imagens =document.querySelectorAll(".iii")
+let imgp =document.querySelector("#ImagemPrincipal")
+
+imagens.forEach((imagem)=>{
+    imagem.addEventListener("click", (event)=>{
+        imgp.src=event.target.src
+    })
+})
+
+let imagensMenores = document.querySelectorAll(".imagem-menor");
+let imagemPrincipal = document.querySelector("#imagem-principal");
+let overlay = document.querySelector("#overlay");
+let descricaoTexto = document.querySelector("#descricao-texto");
+let link = document.querySelector("#link");
+let fecharOverlay = document.querySelector("#fechar-overlay");
+
+imagensMenores.forEach((imagem) => {
+    imagem.addEventListener("click", (event) => {
+        imagemPrincipal.src = event.target.src;
+        descricaoTexto.textContent = event.target.dataset.descricao;
+        link.href = event.target.dataset.link;  // Define o link correspondente
+        overlay.classList.add("active");
+    });
+});
+
+fecharOverlay.addEventListener("click", () => {
+    overlay.classList.remove("active");
+});
