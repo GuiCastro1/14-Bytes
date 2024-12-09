@@ -103,9 +103,10 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
     height: 80vh;
     padding: 2vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .SOBRE::before {
@@ -118,7 +119,7 @@ nav {
     background-image: url("../IMG/14-Bytes.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     z-index: -1;
     opacity: 0.3;
 }
