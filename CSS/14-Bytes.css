@@ -94,12 +94,45 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin: 5vh;
-    /* text-align: justify; */
+    margin: 0vh;
+    text-align: justify;
+}
+
+.SOBRE {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+    padding: 2vh;
+    overflow: hidden;
+}
+
+.SOBRE::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../IMG/14-Bytes.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+
+.SOBRE p {
+font-weight: bolder;
 }
 
 .QUEMSOMOS {
     flex-direction: row-reverse;
+    padding: 14px;
+    border: 3px solid;
+
 }
 
 .IMGSOBREQUEMSOMOS {
@@ -109,6 +142,10 @@ nav {
     /* Executa apenas uma vez */
     animation-delay: 5s;
     /* Começa após 10 segundos */
+
+    /* float:right;
+   
+    clear: right; */
 }
 
 @keyframes subirDescer {
@@ -143,12 +180,25 @@ nav {
 }
 
 
-body{
+/* body{
     background-color: #f8f9fa; /
 }
 h2 {
     font-weight: 700;
     color: #343a40;
+} */
+.galeria {
+    background-color: #6c757d;
+    columns: 150px;
+    /* margin: 0.5em; */
+    padding: 1em;
+    column-gap: 0.5em;
+}
+
+.galeria img {
+    width: 100%;
+    margin-bottom: 0.5em;
+    border-radius: 20px;
 }
 
 #feedbackCarousel {
@@ -167,13 +217,15 @@ h2 {
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid #007bff; /* Borda com cor de destaque */
+    border: 3px solid #007bff;
+    /* Borda com cor de destaque */
 }
 
 .carousel-item h5 {
     font-weight: bold;
     margin: 15px 0 5px;
-    color: #007bff; /* Cor de destaque */
+    color: #007bff;
+    /* Cor de destaque */
 }
 
 .carousel-item p {
@@ -185,7 +237,8 @@ h2 {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    filter: invert(1); /* Ícones brancos */
+    filter: invert(1);
+    /* Ícones brancos */
 }
 
 .carousel-control-prev,
@@ -194,17 +247,20 @@ h2 {
 }
 
 .carousel-indicators [data-bs-target] {
-    background-color: #007bff; /* Indicadores azuis */
+    background-color: #007bff;
+    /* Indicadores azuis */
 }
 
 .carousel-indicators .active {
-    background-color: #0056b3; /* Indicador ativo mais escuro */
+    background-color: #0056b3;
+    /* Indicador ativo mais escuro */
 }
+
 .Footer {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 80vh;
     padding: 2vh;
     overflow: hidden;
@@ -229,8 +285,8 @@ h2 {
 
 .imgFooter {
     background-color: #ffffff;
-    height: 25vh;
-    border-radius: 100%;
+    height: 15vh;
+    border-radius: 20px;
 }
 
 .logoFooter {
@@ -240,7 +296,7 @@ h2 {
     flex-direction: column;
     gap: 20px;
 }
- 
+
 .RedeSocial {
     display: flex;
     align-items: center;
@@ -255,14 +311,16 @@ h2 {
     flex-direction: column;
     margin: 25px;
     gap: 5px;
-   
+
 }
-.LinksAncoras a{
+
+.LinksAncoras a {
     background-color: #000000;
     color: antiquewhite;
     border-radius: 10px;
     padding: 5px;
 }
+
 h5 {
     text-align: center;
     padding: 1vh;
