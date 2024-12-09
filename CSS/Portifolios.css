@@ -15,6 +15,8 @@
 
 body {
     font-family: "Chakra Petch", sans-serif;
+    color:aliceblue;
+    background-color: rgb(96, 15, 172);
 }
 
 h2, h3 {
@@ -39,7 +41,7 @@ a, #ATEXT {
 }
 
 a {
-    background-color: #1AB6D9;
+    background-color: #00d0ff;
     height: 10vh;
     width: 20vh;
     padding: 2vh;
@@ -58,7 +60,7 @@ a:active {
 }
 
 #ATEXT {
-    background-color: #006379;
+    background-color: #00d0ff;
     height: 6vh;
     width: 18vh;
     padding: 1vh;
@@ -91,9 +93,10 @@ a:active {
     height: 50vh;
 }
 
-.Header img {
+.Header > img {
     height: 30vh;
     border-radius: 20px;
+    background-color: aliceblue;
 }
 
 .Sobre {
@@ -162,7 +165,11 @@ a:active {
 }
 
 .Contatos {
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
     font-size: 30px;
     margin: 2vh ;
     height: 40vh;
@@ -172,6 +179,7 @@ a:active {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 20px;
     width: 200px;
     height: 50px;
